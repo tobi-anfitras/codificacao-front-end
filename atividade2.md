@@ -30,7 +30,7 @@ Cenário: estoque = 10, pedido = 12.
 Expressão: pedido > estoque
 
 Pergunta: O sistema deve bloquear a venda? (O resultado é Verdadeiro ou Falso?)
-Resposta: falso
+Resposta: verdadeiro
 Explicação da resposta:a quantidade dos pedidios esta maior do que a do estoque
 ```
 ### 4. Operador: Menor que (<)
