@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- ATENÇÃO: Os alunos devem verificar se a meta viewport está correta para responsividade [7] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Legado - Lab de Conversão</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Layout Fixo</h1>
+        </header>
+
+        <div class="content">
+            <main class="content-main">
+                <article class="hero">
+                    <h2>Título Importante</h2>
+                    <p class="brief">Este é um resumo de um conteúdo importante que precisa de destaque na página [8, 9].</p>
+                </article>
+
+                <div class="last-contents">
+                    <article class="last-content-call">
+                        <h3>Notícia 1</h3>
+                        <p class="brief">Resumo da notícia com largura fixa em pixels [9].</p>
+                    </article>
+                    <article class="last-content-call">
+                        <h3>Notícia 2</h3>
+                        <p class="brief">Outro conteúdo que quebrará se a tela for pequena [10].</p>
+                    </article>
+                </div>
+            </main>
+
+            <aside class="content-sidebar">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        <footer class="main-footer">
+            <p>Copyleft - Técnico em Informática para Internet [11].</p>
+        </footer>
+    </div>
+</body>
+</html>
