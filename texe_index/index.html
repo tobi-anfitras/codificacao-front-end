@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome">
+    <button onclick="mostrar()">aparesa</button>
+    <p id="res"></p>
+
+    <script>
+        function mostrar(){
+            let nome = document.getElementById("nome").value;
+            document.getElementById("res").textContent = "Oi "+nome;
+        }
+    </script>
+    
+</body>
+</html>
