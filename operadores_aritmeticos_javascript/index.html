@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widt=h1, initial-scale=Exemplo de contas matematicas via math">
+    <meta name="viewport" content="width=h1, initial-scale=Exemplos com">
     <title>Document</title>
 </head>
 <body>
@@ -10,7 +10,7 @@
 
     <p>Digite um numero
         <input type="number" id="numero">
-        <button onclick="">calcular</button>
+        <button onclick="calcular()">calcular</button>
     </p>
 
     <h2>Resultados</h2>
@@ -24,21 +24,21 @@
 
     <script>
         function calcular(){
-            let num = Number(document.getElementById("numbero").value);
+            let num = Number(document.getElementById("numero").value);
 
-            document.getElementById("abs").textContent = "Valor absoluto:"+ Math.abs(num)
+            document.getElementById("abs").textContent = "Valor absoluto:"+ Math.abs(num);
             
-            document.getElementById("ceil").textContent = "Arredondado para cima:" + Math.ceil(num)
+            document.getElementById("ceil").textContent = "Arredondado para cima:" + Math.ceil(num);
 
-            document.getElementById("floor").textContent = "Arredondado para baixo:" + Math.floor(num)
+            document.getElementById("floor").textContent = "Arredondado para baixo:" + Math.floor(num);
 
-            document.getElementById("round").textContent = "Arredondado:" + Math.round(num)
+            document.getElementById("round").textContent = "Arredondado:" + Math.round(num);
 
-            document.getElementById("sqrt").textContent = "Raiz quadrada:" + Math.sqrt(num)
+            document.getElementById("sqrt").textContent = "Raiz quadrada:" + Math.sqrt(num);
 
-            document.getElementById("pow").textContent = "Elevado ao quadrado:" + Math.pow(num)
+            document.getElementById("pow").textContent = "Elevado ao quadrado:" + Math.pow(num,2);
 
-            document.getElementById("random").textContent = "Número aleatório:" + Math.random(num)
+            document.getElementById("random").textContent = "Número aleatório:" + Math.random();
             
         }
 
