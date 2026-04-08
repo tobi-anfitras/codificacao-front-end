@@ -67,9 +67,13 @@ body{
     background-color: rgb(255, 33, 33);
     color: rgb(0, 0, 0);
     box-shadow: 0 0 15px rgb(255, 98, 98);
+    
 }
 .nav-btn.active{
     text-decoration: 2px underline rgb(255, 156, 156) ;
+}
+.nav-btn.active:hover{
+    text-decoration:none;
 }
 @keyframes fadeIn{
     from{opacity: 0; transform: translateY(10px);}
@@ -109,13 +113,20 @@ body{
     display: flex;
     justify-content: space-between;
     min-height:200px;
+    max-width: 500px;
     border-bottom: 4px solid rgb(255, 137, 137);
+    flex-direction: column;
+    border-radius: 4%;
 }
 .project-grid{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
+    flex-direction: column;
+}
+.project-grid h2{
+    text-decoration: underline 2px rgb(119, 119, 252);
 }
 .view-btn{
     margin-top: 15px ;
