@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos de eventos</h1>
+
+    <!--evento de clique -->
+    <button id="btnClick">Clique Aqui</button>
+    <div class="output" id="outputClick">nada aconteceu ainda......</div>
+
+    <hr>
+    <!--evento passar o mouse-->
+    <div id="hoverbox" style="width: 200px; height: 100px;background-color: rgb(0, 213, 255);">
+        passe o mouse aqui
+    </div>
+    <div class="output" id="outputhover">passe o mouse sobre a caixa</div>
+
+    <hr>
+
+    <!--evento de teclado-->
+    <label for="inputkey">digite algo no teclado</label>
+    <input type="text" id="inputkey">
+    <div class="output" id="outputkey">voce ainda nao digitou nada........</div>
+
+    <hr>
+
+    <!--Evento de Submissão de formulario-->
+    <form id="formsubmit">
+        <input type="text" id="inputform" placeholder="digite seu nome" required>
+        <button type="submit">enviar</button>
+    </form>
+    <div class="output" id="outputSubmit">aguarda sua resposta.........</div>
+    
+    <hr>
+
+    <!--Eventos de mudança no select-->
+    <label for="selectOption">escolha uma opção</label>
+    <select  id="selectOption">
+        <option value="A">opção A</option>
+        <option value="B">opção B</option>
+        <option value="C">opção C</option>
+    </select>
+    <div class="output" id="outputselect">voce nao escolheu nada.....</div>
+
+    <script>
+        //evento do clique
+        document.getElementById('btnClick').addEventListener('click',function(){
+            document.getElementById('outputClick').textContent = "você clicou no butão"
+        });
+
+        //evento do passar o mouse
+        
+
+        document.getElementById('hoverbox').addEventListener('mouseover',function(){
+            document.getElementById('outputhover').textContent = "você passou o mouse aqui"
+            document.getElementById('hoverbox').style.background = "lightgreen"
+        });
+
+        document.getElementById('hoverbox').addEventListener('mouseout',function(){
+            document.getElementById('hoverbox').style.background = "#00d5ff"
+        });
+
+        //evento do teclado
+        document.getElementById('inputkey').addEventListener('keydown',function(){
+            document.getElementById('outputkey').textContent = "voce presionou a tecla:"+event.key;
+        });
+
+        //evento de submissão de formulario
+
+        document.getElementById('formsubmit').addEventListener('submit',function(){
+            event.preventDefault();
+            const name = document.getElementById('inputform').value;
+            document.getElementById('outputSubmit').textContent = "formulario enviado! seu nome é: "+name;
+        });
+
+        //evento de mudança no select
+        document.getElementById('selectOption').addEventListener('change',function(){
+            const selectValue = document.getElementById('selectOption').value;
+            document.getElementById('outputselect').textContent = "você escolheu "+selectValue;
+        });
+    </script>
+</body>
+
+
+</html>
